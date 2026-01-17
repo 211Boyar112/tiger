@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 – Seite nicht gefunden</title>
+    <meta name="description" content="Die angeforderte Seite wurde nicht gefunden. Zurück zur Startseite oder nutzen Sie unsere Navigation, um die gewünschten Informationen zu finden.">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tigerspin-casino.de/404">
+    <meta property="og:title" content="404 – Seite nicht gefunden">
+    <meta property="og:description" content="Die angeforderte Seite wurde nicht gefunden. Zurück zur Startseite von TigerSpin Casino.">
+    <meta property="og:image" content="https://tigerspin-casino.de/images/og-404.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tigerspin-casino.de/404">
+    <meta property="twitter:title" content="404 – Seite nicht gefunden">
+    <meta property="twitter:description" content="Die angeforderte Seite wurde nicht gefunden. Zurück zur Startseite von TigerSpin Casino.">
+    <meta property="twitter:image" content="https://tigerspin-casino.de/images/twitter-404.jpg">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "404 – Seite nicht gefunden",
+        "description": "Die angeforderte Seite wurde nicht gefunden. Zurück zur Startseite oder nutzen Sie unsere Navigation.",
+        "url": "https://tigerspin-casino.de/404",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Startseite",
+                    "item": "https://tigerspin-casino.de/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "404 – Seite nicht gefunden",
+                    "item": "https://tigerspin-casino.de/404"
+                }
+            ]
+        },
+        "datePublished": "2026-01-09",
+        "dateModified": "2026-01-09",
+        "inLanguage": "de-DE"
+    }
+    </script>
+    
+    <style>
+        /* Base Mobile-First Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            max-width: 100vw;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background: #1a1a2e;
+            color: white;
+            padding: 1rem 0;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FF9900;
+            text-decoration: none;
+        }
+        .logo span { color: white; }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Main Content - 404 Page */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .error-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* 404 Animation */
+        .error-number {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #1a1a2e;
+            line-height: 1;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        @media (max-width: 768px) {
+            .error-number { font-size: 6rem; }
+        }
+        @media (max-width: 480px) {
+            .error-number { font-size: 4rem; }
+        }
+        
+        .error-number::before {
+            content: "404";
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #FF9900;
+            z-index: -1;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .error-number span {
+            display: inline-block;
+            animation: bounce 1s ease infinite alternate;
+        }
+        .error-number span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        .error-number span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-20px); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Error Content */
+        .error-title {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .error-title { font-size: 2rem; }
+        }
+        @media (max-width: 480px) {
+            .error-title { font-size: 1.5rem; }
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Error Tiger Graphic */
+        .error-graphic {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+            position: relative;
+        }
+        .tiger-silhouette {
+            width: 100%;
+            height: 100%;
+            background: url('/images/tiger-silhouette.png') center/contain no-repeat;
+            opacity: 0.1;
+        }
+        
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            min-width: 180px;
+            text-align: center;
+        }
+        .btn-primary {
+            background: #FF9900;
+            color: white;
+            border: 2px solid #FF9900;
+        }
+        .btn-primary:hover {
+            background: #e68900;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 153, 0, 0.2);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #1a1a2e;
+            border: 2px solid #1a1a2e;
+        }
+        .btn-secondary:hover {
+            background: #1a1a2e;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(26, 26, 46, 0.2);
+        }
+        
+        /* Common Pages List */
+        .common-pages {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 600px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .common-pages h3 {
+            color: #1a1a2e;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        .pages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .page-link {
+            display: block;
+            padding: 0.75rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            color: #1a1a2e;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .page-link:hover {
+            background: #1a1a2e;
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        /* Search Box */
+        .search-box {
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+        .search-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .search-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #FF9900;
+            box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.1);
+        }
+        .search-button {
+            background: #1a1a2e;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .search-button:hover {
+            background: #FF9900;
+        }
+        
+        /* Error Details */
+        .error-details {
+            background: #fff5f5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            border-left: 4px solid #e74c3c;
+        }
+        .error-details h4 {
+            color: #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+        .error-details p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a2e;
+            color: #ccc;
+            padding: 3rem 0 1.5rem;
+            margin-top: auto;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        @media (min-width: 768px) {
+            .footer-content { grid-template-columns: 2fr 1fr; }
+        }
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FF9900;
+            margin-bottom: 1rem;
+        }
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links li {
+            margin-bottom: 0.7rem;
+        }
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: #FF9900;
+        }
+        .license-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+        }
+        .license-logo {
+            height: 40px;
+            width: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .license-logo:hover {
+            opacity: 1;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #333;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a1a2e;
+                padding: 1rem;
+            }
+            nav.active ul {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .error-container {
+                padding: 1rem;
+            }
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            .search-form {
+                flex-direction: column;
+            }
+            .search-input, .search-button {
+                width: 100%;
+            }
+            .license-logos { justify-content: center; }
+        }
+        
+        @media (max-width: 480px) {
+            .error-title { font-size: 1.3rem; }
+            .error-message { font-size: 1rem; }
+            .common-pages {
+                padding: 1rem;
+            }
+            .pages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo">Tiger<span>Spin</span></a>
+            <nav id="main-nav">
+                <button class="mobile-menu-btn" aria-label="Menü öffnen">☰</button>
+                <ul>
+                    <li><a href="/">Startseite</a></li>
+                    <li><a href="#">Erfahrungen</a></li>
+                    <li><a href="#">Bonus</a></li>
+                    <li><a href="#">Spiele</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="error-container">
+                <!-- 404 Number with Animation -->
+                <div class="error-number">
+                    <span>4</span><span>0</span><span>4</span>
+                </div>
+                
+                <!-- Error Tiger Graphic -->
+                <div class="error-graphic">
+                    <div class="tiger-silhouette"></div>
+                </div>
+                
+                <!-- Error Title -->
+                <h1 class="error-title">Oops! Seite nicht gefunden</h1>
+                
+                <!-- Error Message -->
+                <p class="error-message">
+                    Es tut uns leid, aber die von Ihnen gesuchte Seite existiert nicht oder wurde verschoben. 
+                    Vielleicht haben Sie sich in der URL vertippt oder die Seite wurde umbenannt.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <a href="/" class="btn btn-primary">Zur Startseite</a>
+                    <a href="#" class="btn btn-secondary">Zu den Erfahrungen</a>
+                    <a href="#" class="btn btn-secondary">Kontakt aufnehmen</a>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="search-box">
+                    <p style="margin-bottom: 1rem; color: #666;">Oder suchen Sie nach dem gewünschten Inhalt:</p>
+                    <form class="search-form" id="searchForm">
+                        <input type="text" 
+                               class="search-input" 
+                               placeholder="Was suchen Sie? z.B. 'Bonus', 'Login', 'Erfahrungen'..."
+                               id="searchQuery">
+                        <button type="submit" class="search-button">Suchen</button>
+                    </form>
+                </div>
+                
+                <!-- Common Pages -->
+                <div class="common-pages">
+                    <h3>Beliebte Seiten, die Sie interessieren könnten:</h3>
+                    <div class="pages-grid">
+                        <a href="/" class="page-link">Startseite</a>
+                        <a href="#" class="page-link">TigerSpin Erfahrungen</a>
+                        <a href="#" class="page-link">Bonus & Freispiele</a>
+                        <a href="#" class="page-link">Spiele Auswahl</a>
+                        <a href="/responsible-gaming" class="page-link">Verantwortungsvoll Spielen</a>
+                        <a href="/kontakt" class="page-link">Kontakt & Support</a>
+                    </div>
+                </div>
+                
+                <!-- Error Details for Developers -->
+                <div class="error-details">
+                    <h4>Technische Information</h4>
+                    <p>
+                        <strong>Fehler:</strong> 404 - Seite nicht gefunden<br>
+                        <strong>URL:</strong> <span id="currentUrl"></span><br>
+                        <strong>Zeitstempel:</strong> <span id="timestamp"></span><br>
+                        <strong>Hinweis:</strong> Wenn Sie denken, dass dies ein Fehler ist, kontaktieren Sie uns bitte.
+                    </p>
+                </div>
+                
+                <!-- Additional Help -->
+                <div style="margin-top: 2rem; color: #666; font-size: 0.9rem;">
+                    <p>Haben Sie Probleme gefunden? <a href="/kontakt">Melden Sie sie uns</a> oder nutzen Sie unsere <a href="/sitemap">Sitemap</a> für eine Übersicht aller Seiten.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">TigerSpin</div>
+                    <p>Unabhängige Informationen und Bewertungen zum TigerSpin Online Casino. Wir bieten sachliche Analysen für deutsche Spieler.</p>
+                    <div class="license-logos">
+                        <a href="https://www.begambleaware.org" rel="nofollow noopener noreferrer" aria-label="BeGambleAware - Verantwortungsvolles Spielen">
+                            <img src="/images/footer-begambleaware.png" alt="BeGambleAware Logo - Organisation für verantwortungsvolles Spielen" class="license-logo" width="120" height="40">
+                        </a>
+                        <a href="https://www.gamban.com" rel="nofollow noopener noreferrer" aria-label="Gamban - Spielsperre Software">
+                            <img src="/images/footer-gamban.png" alt="Gamban Logo - Software zur Sperrung von Glücksspielseiten" class="license-logo" width="100" height="40">
+                        </a>
+                        <a href="https://www.gamcare.org.uk" rel="nofollow noopener noreferrer" aria-label="GamCare - Beratung bei Spielsucht">
+                            <img src="/images/footer-gamcare.png" alt="GamCare Logo - Beratungsstelle bei Glücksspielproblemen" class="license-logo" width="100" height="40">
+                        </a>
+                        <a href="https://www.betblocker.org" rel="nofollow noopener noreferrer" aria-label="BetBlocker - Website-Sperrung">
+                            <img src="/images/footer-betblocker.png" alt="BetBlocker Logo - Tool zur Sperrung von Wettseiten" class="license-logo" width="100" height="40">
+                        </a>
+                        <img src="/images/footer-18.png" alt="Hinweis: Glücksspiel nur für Personen ab 18 Jahren erlaubt" class="license-logo" width="40" height="40">
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches & Kontakt</h4>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-conditions">Terms & Conditions</a></li>
+                        <li><a href="/responsible-gaming">Responsible Gaming</a></li>
+                        <li><a href="/disclaimer">Disclaimer</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 tigerspin-casino.de – Dies ist ein unabhängiges Informationsportal und steht nicht in Verbindung mit der Marke TigerSpin.</p>
+                <p>Glücksspiel ist für Personen unter 18 Jahren verboten. Spielen Sie verantwortungsvoll.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+        
+        // Display current URL and timestamp
+        document.getElementById('currentUrl').textContent = window.location.href;
+        document.getElementById('timestamp').textContent = new Date().toLocaleString('de-DE');
+        
+        // Search form handling
+        document.getElementById('searchForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = document.getElementById('searchQuery').value.trim().toLowerCase();
+            
+            if (!query) {
+                alert('Bitte geben Sie einen Suchbegriff ein.');
+                return;
+            }
+            
+            // Define search mappings
+            const searchMappings = {
+                'startseite': '/',
+                'home': '/',
+                'erfahrungen': '/erfahrungen',
+                'erfahrung': '/erfahrungen',
+                'test': '/erfahrungen',
+                'bewertung': '/erfahrungen',
+                'bonus': '/bonus',
+                'freispiele': '/bonus',
+                'promotion': '/bonus',
+                'angebot': '/bonus',
+                'spiele': '/spiele',
+                'spiel': '/spiele',
+                'slot': '/spiele',
+                'automaten': '/spiele',
+                'kontakt': '/kontakt',
+                'support': '/kontakt',
+                'hilfe': '/kontakt',
+                'datenschutz': '/privacy-policy',
+                'privacy': '/privacy-policy',
+                'agb': '/terms-conditions',
+                'bedingungen': '/terms-conditions',
+                'terms': '/terms-conditions',
+                'responsible': '/responsible-gaming',
+                'verantwortung': '/responsible-gaming',
+                'spielsucht': '/responsible-gaming',
+                'disclaimer': '/disclaimer',
+                'haftung': '/disclaimer',
+                'login': '/',
+                'anmeldung': '/',
+                'registrierung': '/',
+                'tigerspin': '/',
+                'casino': '/'
+            };
+            
+            // Check for exact matches first
+            if (searchMappings[query]) {
+                window.location.href = searchMappings[query];
+                return;
+            }
+            
+            // Check for partial matches
+            for (const [keyword, url] of Object.entries(searchMappings)) {
+                if (query.includes(keyword)) {
+                    window.location.href = url;
+                    return;
+                }
+            }
+            
+            // If no match found, show message and focus on popular pages
+            alert('Leider konnten wir keine passende Seite für Ihre Suche finden. Bitte schauen Sie sich unsere beliebten Seiten unten an oder kontaktieren Sie uns.');
+            document.querySelector('.common-pages').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Auto-focus search input
+        document.getElementById('searchQuery').focus();
+        
+        // Add subtle animation to page links on hover
+        document.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateX(5px)';
+            });
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateX(0)';
+            });
+        });
+        
+        // Back button functionality with history check
+        const backButton = document.createElement('button');
+        backButton.textContent = '← Zurück';
+        backButton.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #1a1a2e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: none;
+        `;
+        document.body.appendChild(backButton);
+        
+        backButton.addEventListener('click', function() {
+            if (history.length > 1) {
+                history.back();
+            } else {
+                window.location.href = '/';
+            }
+        });
+        
+        // Show back button only if there's history
+        if (history.length > 1) {
+            backButton.style.display = 'block';
+        }
+        
+        // Error reporting functionality
+        const reportError = document.createElement('button');
+        reportError.textContent = 'Fehler melden';
+        reportError.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #FF9900;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: none;
+        `;
+        document.body.appendChild(reportError);
+        
+        reportError.addEventListener('click', function() {
+            const errorDetails = `URL: ${window.location.href}\nReferrer: ${document.referrer}\nUser Agent: ${navigator.userAgent}\nTimestamp: ${new Date().toISOString()}`;
+            const mailtoLink = `mailto:webmaster@tigerspin-casino.de?subject=404 Fehler gemeldet&body=${encodeURIComponent(errorDetails)}`;
+            window.location.href = mailtoLink;
+        });
+        
+        // Show report button
+        reportError.style.display = 'block';
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Alt + H = Home
+            if (e.altKey && e.key === 'h') {
+                e.preventDefault();
+                window.location.href = '/';
+            }
+            // Alt + S = Search focus
+            if (e.altKey && e.key === 's') {
+                e.preventDefault();
+                document.getElementById('searchQuery').focus();
+            }
+            // Escape = Clear search
+            if (e.key === 'Escape') {
+                document.getElementById('searchQuery').value = '';
+            }
+        });
+        
+        // Add instruction tooltip for keyboard shortcuts
+        const tooltip = document.createElement('div');
+        tooltip.innerHTML = '<small>Tipp: Alt+H für Startseite, Alt+S für Suche</small>';
+        tooltip.style.cssText = `
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            background: rgba(26, 26, 46, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            z-index: 1000;
+            display: none;
+        `;
+        document.body.appendChild(tooltip);
+        
+        // Show tooltip on search input focus
+        document.getElementById('searchQuery').addEventListener('focus', function() {
+            tooltip.style.display = 'block';
+            setTimeout(() => {
+                tooltip.style.display = 'none';
+            }, 3000);
+        });
+        
+        // Auto-redirect to homepage after 30 seconds (optional)
+        setTimeout(() => {
+            console.log('Automatische Weiterleitung zur Startseite in 30 Sekunden verfügbar. Nutzen Sie window.location.href = "/"; um zu aktivieren.');
+        }, 30000);
+    </script>
+</body>
+</html>

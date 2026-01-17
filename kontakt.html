@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Kontaktformular & Support</title>
+    <meta name="description" content="Kontaktieren Sie TigerSpin Casino. Unser Support hilft bei Fragen zu Bewertungen, Casino-Informationen und verantwortungsvollem Spielen.">
+    <link rel="canonical" href="https://tigerspin-casino.de/kontakt" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico">    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tigerspin-casino.de/kontakt">
+    <meta property="og:title" content="Kontakt – Kontaktformular & Support">
+    <meta property="og:description" content="Kontaktieren Sie TigerSpin Casino. Unser Support hilft bei Fragen zu Bewertungen und Casino-Informationen.">
+    <meta property="og:image" content="https://tigerspin-casino.de/images/og-kontakt.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tigerspin-casino.de/kontakt">
+    <meta property="twitter:title" content="Kontakt – Kontaktformular & Support">
+    <meta property="twitter:description" content="Kontaktieren Sie TigerSpin Casino. Unser Support hilft bei Fragen zu Bewertungen und Casino-Informationen.">
+    <meta property="twitter:image" content="https://tigerspin-casino.de/images/twitter-kontakt.jpg">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Kontakt – Kontaktformular & Support",
+        "description": "Kontaktieren Sie TigerSpin Casino. Unser Support hilft bei Fragen zu Bewertungen, Casino-Informationen und verantwortungsvollem Spielen.",
+        "url": "https://tigerspin-casino.de/kontakt",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Startseite",
+                    "item": "https://tigerspin-casino.de/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Kontakt",
+                    "item": "https://tigerspin-casino.de/kontakt"
+                }
+            ]
+        },
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "TigerSpin Casino Informationsportal",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Maximilianstraße 123",
+                "addressLocality": "Berlin",
+                "postalCode": "10115",
+                "addressCountry": "DE"
+            },
+            "email": "info@tigerspin-casino.de",
+            "url": "https://tigerspin-casino.de"
+        },
+        "datePublished": "2026-01-09",
+        "dateModified": "2026-01-09",
+        "inLanguage": "de-DE"
+    }
+    </script>
+    
+    <style>
+        /* Base Mobile-First Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background: #1a1a2e;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FF9900;
+            text-decoration: none;
+        }
+        .logo span { color: white; }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+            min-height: 70vh;
+        }
+        .content-container {
+            background: white;
+            border-radius: 10px;
+            padding: 3rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #1a1a2e;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #FF9900;
+            font-size: 2rem;
+        }
+        h2 {
+            color: #1a1a2e;
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
+        }
+        h3 {
+            color: #333;
+            margin: 1.5rem 0 1rem;
+            font-size: 1.2rem;
+        }
+        p, ul, ol {
+            margin-bottom: 1.2rem;
+            color: #555;
+        }
+        ul, ol {
+            padding-left: 2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        strong {
+            color: #1a1a2e;
+        }
+        
+        /* Contact Layout */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+        @media (min-width: 992px) {
+            .contact-grid { grid-template-columns: 1fr 1fr; }
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #1a1a2e;
+        }
+        .form-input, .form-textarea, .form-select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        .form-input:focus, .form-textarea:focus, .form-select:focus {
+            outline: none;
+            border-color: #FF9900;
+            box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.1);
+        }
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .form-checkbox {
+            margin-right: 0.5rem;
+        }
+        .form-submit {
+            background: #FF9900;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+        .form-submit:hover {
+            background: #e68900;
+        }
+        .form-submit:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+        .form-error {
+            color: #e74c3c;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            background: #f0f8ff;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: #3498db;
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+        }
+        .info-content h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* FAQ Section */
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            display: none;
+            padding-top: 0.5rem;
+            color: #555;
+        }
+        .faq-answer.active {
+            display: block;
+        }
+        
+        /* Response Time Info */
+        .response-info {
+            background: #fff8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border: 1px solid #FF9900;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .breadcrumb span {
+            color: #666;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a2e;
+            color: #ccc;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        @media (min-width: 768px) {
+            .footer-content { grid-template-columns: 2fr 1fr; }
+        }
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FF9900;
+            margin-bottom: 1rem;
+        }
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links li {
+            margin-bottom: 0.7rem;
+        }
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: #FF9900;
+        }
+        .license-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+        }
+        .license-logo {
+            height: 40px;
+            width: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .license-logo:hover {
+            opacity: 1;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #333;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        /* Map */
+        .map-container {
+            height: 300px;
+            background: #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            background: #f8f9fa;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a1a2e;
+                padding: 1rem;
+            }
+            nav.active ul {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .content-container {
+                padding: 1.5rem;
+            }
+            h1 { font-size: 1.7rem; }
+            h2 { font-size: 1.4rem; }
+            .contact-form, .contact-info {
+                padding: 1.5rem;
+            }
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .info-icon {
+                margin-bottom: 1rem;
+            }
+            .license-logos { justify-content: center; }
+        }
+        
+        @media (max-width: 480px) {
+            main {
+                padding: 2rem 0;
+            }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.3rem; }
+            .content-container {
+                padding: 1rem;
+            }
+            .contact-grid {
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo">Tiger<span>Spin</span></a>
+            <nav id="main-nav">
+                <button class="mobile-menu-btn" aria-label="Menü öffnen">☰</button>
+                <ul>
+                    <li><a href="/">Startseite</a></li>
+                    <li><a href="#">Erfahrungen</a></li>
+                    <li><a href="#">Bonus</a></li>
+                    <li><a href="#">Spiele</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="/">Startseite</a> / <span>Kontakt</span>
+        </div>
+        
+        <div class="content-container">
+            <h1>Kontakt – Wir helfen Ihnen gerne weiter</h1>
+            
+            <p>Haben Sie Fragen zu unseren Casino-Bewertungen, benötigen Sie weitere Informationen oder möchten Sie Feedback geben? Unser Team steht Ihnen gerne zur Verfügung. Bitte nutzen Sie das Kontaktformular oder eine unserer anderen Kontaktmöglichkeiten.</p>
+            
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Kontaktformular</h2>
+                    <p>Bitte füllen Sie das Formular aus und wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+                    
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="Ihr Name">
+                            <div class="form-error" id="nameError">Bitte geben Sie Ihren Namen ein.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-Mail-Adresse *</label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="ihre@email.de">
+                            <div class="form-error" id="emailError">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Betreff *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Bitte wählen Sie...</option>
+                                <option value="allgemein">Allgemeine Anfrage</option>
+                                <option value="bewertung">Frage zu Casino-Bewertungen</option>
+                                <option value="bonus">Frage zu Bonusangeboten</option>
+                                <option value="technisch">Technisches Problem</option>
+                                <option value="rechtlich">Rechtliche Anfrage</option>
+                                <option value="kooperation">Kooperationsanfrage</option>
+                                <option value="feedback">Feedback & Vorschläge</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                            <div class="form-error" id="subjectError">Bitte wählen Sie einen Betreff aus.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Nachricht *</label>
+                            <textarea id="message" name="message" class="form-textarea" required placeholder="Ihre Nachricht an uns..."></textarea>
+                            <div class="form-error" id="messageError">Bitte geben Sie eine Nachricht ein.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">
+                                <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required>
+                                Ich habe die <a href="/privacy-policy">Datenschutzerklärung</a> gelesen und akzeptiere diese. *
+                            </label>
+                            <div class="form-error" id="privacyError">Bitte akzeptieren Sie die Datenschutzerklärung.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="form-submit" id="submitButton">Nachricht senden</button>
+                        </div>
+                        
+                        <div class="response-info">
+                            <p><strong>Antwortzeit:</strong> Wir bemühen uns, alle Anfragen innerhalb von 24-48 Stunden zu beantworten (werktags).</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Weitere Kontaktmöglichkeiten</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Adresse</h3>
+                            <p><strong>TigerSpin Casino Informationsportal</strong><br>
+                            Maximilianstraße 123<br>
+                            10115 Berlin<br>
+                            Deutschland</p>
+                            <p><small>Hinweis: Dies ist ein Informationsportal. Wir sind kein physisches Casino und bieten keine Glücksspieldienste vor Ort an.</small></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>E-Mail</h3>
+                            <p><strong>Allgemeine Anfragen:</strong><br>
+                            <a href="mailto:info@tigerspin-casino.de">info@tigerspin-casino.de</a></p>
+                            
+                            <p><strong>Rechtliche Anfragen:</strong><br>
+                            <a href="mailto:legal@tigerspin-casino.de">legal@tigerspin-casino.de</a></p>
+                            
+                            <p><strong>Datenschutz:</strong><br>
+                            <a href="mailto:datenschutz@tigerspin-casino.de">datenschutz@tigerspin-casino.de</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <h3>Erreichbarkeit</h3>
+                            <p><strong>E-Mail-Support:</strong><br>
+                            Antwort innerhalb von 24-48 Stunden (werktags)</p>
+                            
+                            <p><strong>Bitte beachten Sie:</strong><br>
+                            • Kein Telefonsupport verfügbar<br>
+                            • Keine Live-Chat-Funktion<br>
+                            • Wochenend- und Feiertagsanfragen<br>
+                            &nbsp;&nbsp;werden am nächsten Werktag bearbeitet</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">⚠️</div>
+                        <div class="info-content">
+                            <h3>Wichtiger Hinweis</h3>
+                            <p>Bitte beachten Sie, dass wir <strong>kein Glücksspielanbieter</strong> sind und daher keine Support-Anfragen zu:</p>
+                            <ul>
+                                <li>Ein- und Auszahlungen bearbeiten können</li>
+                                <li>Casino-Konten verwalten können</li>
+                                <li>Bonusbedingungen einzelner Casinos klären können</li>
+                            </ul>
+                            <p>Für solche Anfragen wenden Sie sich bitte direkt an den jeweiligen Casino-Anbieter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div>
+                        <h3>Unser Standort in Berlin</h3>
+                        <p>Maximilianstraße 123, 10115 Berlin</p>
+                        <p><small>(Dies ist ein Informationsportal, kein physisches Casino)</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <h2>Häufig gestellte Fragen (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Wie lange dauert es, bis ich eine Antwort erhalte? <span>+</span></div>
+                <div class="faq-answer">Wir bemühen uns, alle Anfragen innerhalb von 24-48 Stunden an Werktagen zu beantworten. An Wochenenden und Feiertagen kann es etwas länger dauern. Bitte überprüfen Sie auch Ihren Spam-Ordner, falls Sie keine Antwort erhalten.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Kann ich telefonisch Kontakt aufnehmen? <span>+</span></div>
+                <div class="faq-answer">Nein, wir bieten keinen Telefonsupport an. Bitte nutzen Sie unser Kontaktformular oder senden Sie uns eine E-Mail. Auf diesem Weg können wir Ihre Anfrage am besten bearbeiten und dokumentieren.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Können Sie mir bei Problemen mit einem Casino helfen? <span>+</span></div>
+                <div class="faq-answer">Als Informationsportal können wir keine Support-Anfragen zu einzelnen Casinos bearbeiten. Bei Problemen mit Einzahlungen, Auszahlungen oder Casino-Konten wenden Sie sich bitte direkt an den Kundenservice des jeweiligen Casinos. Wir können jedoch allgemeine Informationen zu seriösen Casinos bereitstellen.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Wie kann ich eine Casino-Bewertung vorschlagen? <span>+</span></div>
+                <div class="faq-answer">Wenn Sie ein Casino vorschlagen möchten, das wir bewerten sollten, nutzen Sie bitte das Kontaktformular und wählen Sie "Feedback & Vorschläge" als Betreff. Bitte geben Sie den Namen des Casinos und warum Sie es für eine Bewertung interessant halten.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Bieten Sie Kooperationsmöglichkeiten an? <span>+</span></div>
+                <div class="faq-answer">Ja, wir sind offen für Kooperationen mit seriösen Partnern. Bitte senden Sie uns eine detaillierte Anfrage über das Kontaktformular mit "Kooperationsanfrage" als Betreff. Wir prüfen jede Anfrage sorgfältig und melden uns bei Interesse zurück.</div>
+            </div>
+            
+            <div class="response-info" style="margin-top: 3rem;">
+                <h3>Datenschutz und Vertraulichkeit</h3>
+                <p>Alle Ihre Anfragen werden vertraulich behandelt. Ihre persönlichen Daten werden gemäß unserer <a href="/privacy-policy">Datenschutzerklärung</a> geschützt und nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich erforderlich oder Sie haben ausdrücklich eingewilligt.</p>
+            </div>
+            
+            <!-- Additional Contact Info -->
+            <div class="contact-info" style="margin-top: 2rem;">
+                <h3>Weitere wichtige Kontakte</h3>
+                <p>Für spezifische Anfragen können Sie sich auch direkt an folgende Stellen wenden:</p>
+                
+                <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem;">
+                    <div>
+                        <strong>Bei Spielsuchtproblemen:</strong><br>
+                        <a href="https://www.check-dein-spiel.de" rel="nofollow noopener">BZgA Beratungsstelle</a><br>
+                        Telefon: 0800 137 27 00 (kostenlos)
+                    </div>
+                    
+                    <div>
+                        <strong>Datenschutzbeschwerden:</strong><br>
+                        Die Bundesbeauftragte für den Datenschutz<br>
+                        <a href="https://www.bfdi.bund.de" rel="nofollow noopener">www.bfdi.bund.de</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">TigerSpin</div>
+                    <p>Unabhängige Informationen und Bewertungen zum TigerSpin Online Casino. Wir bieten sachliche Analysen für deutsche Spieler.</p>
+                    <div class="license-logos">
+                        <a href="https://www.begambleaware.org" rel="nofollow noopener noreferrer" aria-label="BeGambleAware - Verantwortungsvolles Spielen">
+                            <img src="/images/footer-begambleaware.png" alt="BeGambleAware Logo - Organisation für verantwortungsvolles Spielen" class="license-logo" width="120" height="40">
+                        </a>
+                        <a href="https://www.gamban.com" rel="nofollow noopener noreferrer" aria-label="Gamban - Spielsperre Software">
+                            <img src="/images/footer-gamban.png" alt="Gamban Logo - Software zur Sperrung von Glücksspielseiten" class="license-logo" width="100" height="40">
+                        </a>
+                        <a href="https://www.gamcare.org.uk" rel="nofollow noopener noreferrer" aria-label="GamCare - Beratung bei Spielsucht">
+                            <img src="/images/footer-gamcare.png" alt="GamCare Logo - Beratungsstelle bei Glücksspielproblemen" class="license-logo" width="100" height="40">
+                        </a>
+                        <a href="https://www.betblocker.org" rel="nofollow noopener noreferrer" aria-label="BetBlocker - Website-Sperrung">
+                            <img src="/images/footer-betblocker.png" alt="BetBlocker Logo - Tool zur Sperrung von Wettseiten" class="license-logo" width="100" height="40">
+                        </a>
+                        <img src="/images/footer-18.png" alt="Hinweis: Glücksspiel nur für Personen ab 18 Jahren erlaubt" class="license-logo" width="40" height="40">
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches & Kontakt</h4>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-conditions">Terms & Conditions</a></li>
+                        <li><a href="/responsible-gaming">Responsible Gaming</a></li>
+                        <li><a href="/disclaimer">Disclaimer</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 tigerspin-casino.de – Dies ist ein unabhängiges Informationsportal und steht nicht in Verbindung mit der Marke TigerSpin.</p>
+                <p>Glücksspiel ist für Personen unter 18 Jahren verboten. Spielen Sie verantwortungsvoll.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+        
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                // Toggle current answer
+                if (isActive) {
+                    answer.classList.remove('active');
+                    question.querySelector('span').textContent = '+';
+                } else {
+                    // Close all other answers
+                    document.querySelectorAll('.faq-answer').forEach(ans => {
+                        ans.classList.remove('active');
+                        ans.previousElementSibling.querySelector('span').textContent = '+';
+                    });
+                    
+                    // Open current answer
+                    answer.classList.add('active');
+                    question.querySelector('span').textContent = '−';
+                }
+            });
+        });
+        
+        // Contact Form Validation
+        const contactForm = document.getElementById('contactForm');
+        const submitButton = document.getElementById('submitButton');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Reset errors
+            document.querySelectorAll('.form-error').forEach(error => {
+                error.style.display = 'none';
+            });
+            
+            let isValid = true;
+            
+            // Validate name
+            const nameInput = document.getElementById('name');
+            if (!nameInput.value.trim()) {
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate email
+            const emailInput = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate subject
+            const subjectSelect = document.getElementById('subject');
+            if (!subjectSelect.value) {
+                document.getElementById('subjectError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate message
+            const messageTextarea = document.getElementById('message');
+            if (!messageTextarea.value.trim()) {
+                document.getElementById('messageError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate privacy checkbox
+            const privacyCheckbox = document.getElementById('privacy');
+            if (!privacyCheckbox.checked) {
+                document.getElementById('privacyError').style.display = 'block';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Disable submit button
+                submitButton.disabled = true;
+                submitButton.textContent = 'Wird gesendet...';
+                
+                // Simulate form submission (in real implementation, this would be an AJAX call)
+                setTimeout(() => {
+                    alert('Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.');
+                    contactForm.reset();
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Nachricht senden';
+                }, 1500);
+            }
+        });
+        
+        // Real-time validation
+        const inputs = document.querySelectorAll('.form-input, .form-textarea, .form-select');
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                const errorId = this.id + 'Error';
+                const errorElement = document.getElementById(errorId);
+                if (errorElement) {
+                    errorElement.style.display = 'none';
+                }
+            });
+        });
+        
+        // Privacy checkbox validation
+        document.getElementById('privacy').addEventListener('change', function() {
+            document.getElementById('privacyError').style.display = 'none';
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('main-nav').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
