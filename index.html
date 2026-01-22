@@ -24,71 +24,96 @@
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "WebSite",
+      "@id": "https://tigerspin-casino.de/#website",
+      "url": "https://tigerspin-casino.de/",
+      "name": "TigerSpin Casino Erfahrungen",
+      "description": "Unabhängige Bewertungen und Erfahrungen zum TigerSpin Online Casino.",
+      "potentialAction": [{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://tigerspin-casino.de/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }],
+      "inLanguage": "de-DE"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tigerspin-casino.de/#breadcrumb",
+      "itemListElement": [
         {
-          "@type": "WebSite",
-          "@id": "https://tigerspin-casino.de/#website",
-          "url": "https://tigerspin-casino.de/",
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://tigerspin-casino.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Casino Tests",
+          "item": "https://tigerspin-casino.de/casino-tests/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "TigerSpin Casino Erfahrungen",
-          "description": "Unabhängige Bewertungen und Erfahrungen zum TigerSpin Online Casino.",
-          "potentialAction": [{
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://tigerspin-casino.de/?s={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }],
-          "inLanguage": "de-DE"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://tigerspin-casino.de/#webpage",
-          "url": "https://tigerspin-casino.de/",
-          "name": "TigerSpin Casino - Erfahrungen, Login, Bonus 2026",
-          "isPartOf": {
-            "@id": "https://tigerspin-casino.de/#website"
-          },
-          "description": "TigerSpin Casino Erfahrungen 2026: Test, Bonus Code, Login, Freispiele & Bewertung. Erfahre, ob TigerSpin Casino seriös ist.",
-          "breadcrumb": {
-            "@id": "https://tigerspin-casino.de/#breadcrumb"
-          },
-          "inLanguage": "de-DE",
-          "datePublished": "2026-01-09T10:00:00+01:00",
-          "dateModified": "2026-01-09T10:00:00+01:00"
-        },
-        {
-          "@type": "Article",
-          "@id": "https://tigerspin-casino.de/#article",
-          "isPartOf": {
-            "@id": "https://tigerspin-casino.de/#webpage"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Max Schneider",
-            "url": "https://tigerspin-casino.de/author/max-schneider"
-          },
-          "headline": "TigerSpin Casino - Erfahrungen, Bonus & Login 2026",
-          "datePublished": "2026-01-09T10:00:00+01:00",
-          "dateModified": "2026-01-09T10:00:00+01:00",
-          "mainEntityOfPage": {
-            "@id": "https://tigerspin-casino.de/#webpage"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "CasinoExperten.de",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://tigerspin-casino.de/images/logo-casino-experten.png"
-            }
-          },
-          "description": "Eine detaillierte Analyse und Bewertung des TigerSpin Online Casinos für deutsche Spieler."
+          "item": "https://tigerspin-casino.de/"
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tigerspin-casino.de/#webpage",
+      "url": "https://tigerspin-casino.de/",
+      "name": "TigerSpin Casino - Erfahrungen, Login, Bonus 2026",
+      "isPartOf": {
+        "@id": "https://tigerspin-casino.de/#website"
+      },
+      "description": "TigerSpin Casino Erfahrungen 2026: Test, Bonus Code, Login, Freispiele & Bewertung. Erfahre, ob TigerSpin Casino seriös ist.",
+      "breadcrumb": {
+        "@id": "https://tigerspin-casino.de/#breadcrumb"
+      },
+      "inLanguage": "de-DE",
+      "datePublished": "2026-01-09T10:00:00+01:00",
+      "dateModified": "2026-01-09T10:00:00+01:00"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://tigerspin-casino.de/#article",
+      "isPartOf": {
+        "@id": "https://tigerspin-casino.de/#webpage"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Max Schneider",
+        "url": "https://tigerspin-casino.de/author/max-schneider"
+      },
+      "headline": "TigerSpin Casino - Erfahrungen, Bonus & Login 2026",
+      "datePublished": "2026-01-09T10:00:00+01:00",
+      "dateModified": "2026-01-09T10:00:00+01:00",
+      "mainEntityOfPage": {
+        "@id": "https://tigerspin-casino.de/#webpage"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CasinoExperten.de",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tigerspin-casino.de/images/logo-casino-experten.png"
+        }
+      },
+      "description": "Eine detaillierte Analyse und Bewertung des TigerSpin Online Casinos für deutsche Spieler."
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         /* Base Mobile-First Styles */
@@ -799,3 +824,4 @@
 </body>
 
 </html>
+
